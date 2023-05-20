@@ -1,0 +1,113 @@
+main {
+    width: 100vw;
+    height: auto;
+    & .impact-img-container{
+        width: 336px;
+        height: 362px;
+        margin: 0 auto;
+        margin-top: 15px;
+        @include tablet {
+            width: 400px;
+            height: 486px;
+        }
+        @include desktop {
+            margin-right: 70px;
+            width: 550px;
+            height: 686px;
+        }
+        & .img {
+            max-width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('/assets/img/main-2.jpg');
+            border-radius: 25px;
+        }
+        & .impact-section-info{
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            & h2 {
+                font-size: 2.8rem;
+                color: $main-text-color;
+                line-height: 36px;
+                font-weight: 500;
+                margin-left: -95px;
+                margin-top: 15px;
+                @include tablet {
+                    font-size: 3.0rem;
+                    margin-left: -145px;
+                }
+                @include desktop {
+                    text-align: center;
+                    position: absolute;
+                    top: 155px;
+                    left: 200px;
+                    text-align: start;
+                    width: 315px;
+                    font-size: 3.5rem;
+                    line-height: 18px;
+                }
+            }
+            & p {
+                font-size: 1.2rem;
+                font-weight: 300;
+                line-height: 15px;
+                color: $main-text-color;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 0px;
+                @include tablet{
+                    font-size: 1.4rem;
+                    line-height: 18px;
+                }
+                @include desktop {
+                    text-align: center;
+                    position: absolute;
+                    top: 218px;
+                    left: 55px;
+                    text-align: start;
+                    width: 315px;
+                    font-size: 1.4rem;
+                    line-height: 18px;
+                }
+            }
+            & button{
+                width: 150px;
+                height: 42px;
+                border-radius: 20px;
+                background-color: $button-background;
+                border: none;
+                color: white;
+                font-weight: 700;
+                font-size: 1.2rem;
+                line-height: 17px;
+                margin-top: 20px;
+                @include tablet {
+                    width: 160px;
+                    height: 45px;
+                    border-radius: 25px
+                }
+                @include desktop {
+                    text-align: center;
+                    position: absolute;
+                    top: 370px;
+                    left: 55px;
+                    text-align: center;
+                    width: 200px;
+                    font-size: 1.4rem;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+    @import 'health-care';
+    @import 'home-decoration';
+    @import 'about-us';
+    @import 'gallery';
+    @import 'location';

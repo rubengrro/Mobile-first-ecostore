@@ -1,0 +1,76 @@
+.navbar {
+    width: 100vw;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h3{
+        display: inline-block;
+        font-size: 2.0rem;
+        font-weight: 400;
+        color: $main-text-color;
+        padding-left: 22px;
+        padding-top: 25px;
+        @include tablet {
+            font-size: 2.2rem;
+        }
+        @include desktop {
+            font-size: 2.5rem;
+            font-weight: 500;
+            padding-left: 60px;
+        }
+    }
+    & .desktop-menu {
+        display: flex;
+        flex-direction: row;
+        & .login-icon{
+            width: 28px;
+            height: 28px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+            background-image: url(/assets/svg/profile.svg);
+            display: none;
+            @include desktop {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+        & .wish-icon {
+            @extend .login-icon;
+            background-image: url(/assets/svg/hearT-copy.svg);
+        }
+        & .cart-icon {
+            @extend .login-icon;
+            background-image: url(/assets/svg/shopping-cart.svg);
+        }
+    }
+    & .menu-icon {
+        display: inline-block;
+        width: 28px;
+        height: 20px;
+        margin-top: 25px;
+        margin-right: -340px;
+        background-image: url('/assets/img/menu.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include tablet {
+            margin-right: -400px;
+        }
+        @include tablet2 {
+            margin-right: -465px;
+        }
+        @include tablet3 {
+            margin-right: -540px;
+        }
+        @include tablet4 {
+            margin-right: -620px;
+        }
+        @include desktop {
+            display: none;
+        }
+    }
+}
+

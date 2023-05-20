@@ -1,0 +1,25 @@
+$main-text-color: #7C6A0A;
+$house-card-color: #BABD8D;
+$health-card-color: #FFDAC6;
+$background-color: #FFEFE7;
+$bold-text-color: #E86424;
+$button-background: #FA9500;
+$primary-font: 'IBM Plex Sans', sans-serif;
+$secondary-font: 'Inter', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'IBM Plex Sans', sans-serif;
+};
+body {
+    background-color: $background-color;
+};
+
+
+@import 'mediaquery';   
+@import 'header';
+@import 'main';
+@import 'footer';
